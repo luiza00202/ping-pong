@@ -35,9 +35,13 @@
             canvasCtx.fillRect(10, 200, lineWidth, 200)
 
             //raquete direita:
-            
+
             canvasCtx.fillRect(window.innerWidth - lineWidth - 10, 200, lineWidth, 200)
             
+            //bolinha:
+            canvasCtx.beginPath()      // false sentido orario true sentido ant orario
+            canvasCtx.arc(500, 300, 20, 0, 2 * Math.PI, false)
+            canvasCtx.fill()
         }
         setup()
         draw()
