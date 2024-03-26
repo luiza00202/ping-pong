@@ -31,7 +31,12 @@
             
             canvasCtx.fillRect(x, y, w, h)
 
+            // raquete esquerda:
             canvasCtx.fillRect(10, 200, lineWidth, 200)
+
+            //raquete direita:
+            canvasCtx.fillRect(window.innerWidth - lineWidth - 10, 200, lineWidth, 200)
+            
         }
         setup()
         draw()
